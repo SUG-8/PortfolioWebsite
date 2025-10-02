@@ -1,0 +1,542 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+:root {
+  --primary: #0a192f;
+  --accent: #1f4287;
+  --light-grey: #dce1e7;
+  --dark-grey: #333;
+  --white: #fff;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--primary);
+  color: var(--light-grey);
+  font-size: large;
+}
+
+hr {
+  border: none;
+  border-top: 3.5px solid var(--accent);
+  margin: 20px 0;
+  width: 10em;
+  margin-left: 2rem;
+}
+
+.certline {
+  border: none;
+  border-top: 3.5px solid var(--accent);
+  margin: 20px 0;
+  width: 20em;
+  margin-left: 2rem;
+}
+
+.socialsLine {
+  border: none;
+  border-top: 3.5px solid var(--accent);
+  margin: 20px 0;
+  width: 90%;
+  margin-left: 5rem;
+  margin-bottom: 6em;
+}
+
+header {
+  padding: 2rem 2rem;
+  width: 100%;
+  top: 0;
+  z-index: 10;
+  text-align: center;
+  position: fixed;
+  background: var(--primary);
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar h2 {
+  color: var(--accent);
+}
+
+.menu {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu a {
+  color: var(--light-grey);
+  text-decoration: none;
+  position: relative;
+  transition: 0.3s;
+}
+
+.menu a:hover {
+  transform: scale(1.2);
+}
+
+.menu a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 0%;
+  background: #007BFF; 
+  transition: width 0.3s ease-in-out;
+}
+
+.menu a:hover::after,
+.menu a.active::after {
+  width: 100%;
+}
+
+/* HERO */
+.hero-section {
+  margin-top: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.hero-section h1 {
+  font-size: 3.5rem;
+  color: var(--accent);
+  margin-top: 3em;
+}
+
+.hero-section h3 {
+  margin-top: 1rem;
+  font-size: 2.5rem;
+  color: var(--white);
+}
+
+.hero-section p {
+  margin: 1rem;
+  max-width: 600px;
+  font-size: 1.5em;
+}
+
+.buttons {
+  margin-top: 1.5rem;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.view,
+.contact {
+  padding: 0.75rem 1.5rem;
+  border: 2px solid var(--accent);
+  background: none;
+  color: var(--accent);
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.3s;
+  width: 15em;
+  height: 5em;
+}
+
+.view a,
+.contact a {
+  text-decoration: none;
+  color: var(--accent);
+  font-size: 1.5em;
+}
+
+.view:hover {
+  background: var(--accent);
+  color: var(--white);
+}
+
+.view:hover a {
+  color: var(--white);
+}
+
+.contact:hover {
+  background: var(--white);
+  color: var(--accent);
+}
+
+.about {
+  margin-top: 8em;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.aboutContent {
+  font-size: 20px;
+  max-width: 40em;
+  margin: 0 auto;
+  margin-top: 3em;
+  text-align: center;
+  padding: 20px;
+}
+
+h2 {
+  margin-top: 5rem;
+  color: var(--accent);
+  margin-left: 2rem;
+}
+
+p{
+    font-size: 25px;
+}
+
+.about p{
+    font-size: 25px;
+}
+
+.about hr {
+  width: 20em;
+  margin: 0rem;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* WORK EXPERIENCE */
+.Experience {
+  margin: 3rem;
+  max-width: 40em;
+  font-size: 30px;
+  margin-left: 6em;
+  margin-bottom: 5em;
+}
+
+.details{
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
+
+.Experience p {
+  max-width: 40em;
+}
+
+.experienceLinks{
+    font-size: 20px;
+}
+
+.stylingEx {
+  display: flex;
+  gap: 3em;
+}
+
+.experienceLinks {
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-start;
+  margin-left: 3em;
+  margin-bottom: 0;
+}
+
+.experienceLinks a {
+  text-decoration: none;
+  color: var(--accent);
+  transition: transform 0.3s;
+}
+
+.experienceLinks a:hover {
+  transform: scale(1.2);
+  color: #007BFF;
+}
+
+
+
+.experienceLinks a:hover::after,
+.experienceLinks a.active::after {
+  width: 100%;
+}
+
+/* SKILLS, CERTIFICATES, PROJECTS */
+.skills-list,
+.certificate-img,
+.project-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.skills-list li:hover {
+  transform: scale(1.4);
+}
+
+.skills-list img {
+  width: 50px;
+  height: 50px;
+}
+
+.skills-list li {
+  list-style: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  color: var(--white);
+}
+
+.image-row {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-top: 5em;
+  text-align: center;
+}
+
+.certificate-img {
+  max-width: 200px;
+}
+
+.certificate-img img {
+  width: 200px;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  height: auto;
+}
+
+.certificate-img img:hover {
+  transform: scale(1.2);
+}
+
+#projects {
+  border: 1px solid var(--accent);
+  background-color: var(--accent);
+}
+
+#projects a {
+  text-decoration: none;
+  color: var(--primary);
+}
+
+#projects img {
+  width: 20em;
+  height: auto;
+  border-radius: 5%;
+}
+
+#projects h2 {
+  color: var(--primary);
+  margin-top: 0em;
+  font-size: 4rem;
+}
+
+.projHeading {
+  margin-left: 2em;
+  margin-top: 5em;
+}
+
+.projContent {
+  margin-left: 2em;
+  width: 50em;
+  margin-bottom: 3em;
+}
+
+.project {
+  margin: 3rem;
+  padding: 1rem;
+  border-radius: 10px;
+  flex: 1 1 300px;
+}
+
+.project a {
+  color: #1f4287;
+}
+
+.project h3 {
+  color: var(--white);
+}
+
+#projects .gitpic img{
+   height: 50px;
+    width: auto;
+}
+
+.state {
+  background-color: var(--primary);
+  color: var(--white);
+  border-radius: 30px;
+  margin-bottom: .6rem;
+  margin-right: .6rem;
+  padding: .25rem .5rem;
+  font-size: .8rem;
+  font-weight: 600;
+  line-height: 1.2;
+  width: fit-content;
+}
+
+/* EDUCATION */
+.education li {
+  margin-left: 3rem;
+  list-style: none;
+  font-size: 25px;
+  color: var(--accent);
+  font-weight: bolder;
+}
+
+.education p {
+  margin-left: 6rem;
+}
+
+.education h4 {
+  margin-left: 4em;
+}
+
+.education h3 {
+  margin-left: 8em;
+}
+ 
+.EdContent {
+  margin-top: 5em;
+  margin-left: 6em;
+}
+
+/* CONTACT SECTION in index */
+#contact h2 {
+  text-align: center;
+}
+
+#contact img {
+  height: 50px;
+  width: auto;
+}
+
+#contact img:hover {
+  transform: scale(2);
+}
+
+.contain {
+  gap: 30px;
+  display: flex;
+  justify-content: center;
+  margin: 30px;
+  margin-right: 50px;
+}
+
+/* FOOTER */
+footer {
+  height: 20px;
+  text-align: center;
+  padding: 2rem;
+  background: #1a2636;
+  color: var(--light-grey);
+}
+
+/* EMAIL / FORM STYLING */
+.emailS {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4em;
+  gap: 10em;
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  height: 100%;
+  max-height: 100%;
+}
+
+.form {
+    margin-top: 5em;
+  background: var(--light-grey);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0px 6px 20px rgba(0,0,0,0.1);
+  max-width: 400px;
+  max-height: 30em;
+  width: 100%;
+  color: var(--primary);
+}
+
+
+
+.form h2 {
+  margin-bottom: 1rem;
+  color: var(--accent);
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.form input,
+.form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 14px;
+  background-color: #759cca;
+  margin-bottom: 1rem;
+
+}
+
+.form ::placeholder{
+    color: var(--white);
+}
+
+.form p{
+    font-size: 23px;
+}
+
+.form button {
+  margin: 0 auto;
+  display: block;
+  width: 10em;
+  padding: 10px;
+  background: var(--accent);
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.form button:hover {
+  background: #0056b3;
+  transform: scale(1.1);
+}
+
+.hidden {
+  display: none;
+}
+
+.pending{
+  margin-top: 1rem;
+  padding: 10px;
+  background: #ebeed3;
+  border: 1px solid #eaf3a6;
+  border-radius: 8px;
+  color: #b9b96f;
+  font-weight: bold;
+  text-align: center;
+}
+
+/*FORM IMAGE*/
+.FunImg img{
+  height: 33em;
+  width: auto;
+  justify-content: flex-end;
+  margin-top: 0;
+
+}
+
+/*TEXT*/
+.FunImg h2{
+  margin-left: 8em;
+  margin-bottom: 0;
+}
