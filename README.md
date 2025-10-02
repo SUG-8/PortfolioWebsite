@@ -1,8 +1,8 @@
 # Stephane's Portfolio Website 🌐
 
-Welcome to my personal portfolio website! This project showcases my journey as a 17-year-old aspiring **Software Developer and Data Analyst**, highlighting my skills, projects, and experiences.  
+Welcome to my personal portfolio website! This project showcases my journey an aspiring **Software Developer and Data Analyst**, highlighting my skills, projects, and experiences.  
 
-The website is designed to share my work, including hands-on projects with **Python, SQL, web development, and data analysis**, as well as my experience as an **IT Helpdesk Technician, Tutor, and Retail Volunteer**. It demonstrates problem-solving, user-focused design, and collaboration skills.
+The website is designed to share my work, including hands on projects with **Python, SQL, web development, and data analysis**, as well as my experience as an **IT Helpdesk Technician, Tutor, and Retail Volunteer**. It demonstrates problem solving, user focused design, and collaboration skills.
 
 ## Features
 
